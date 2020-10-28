@@ -6,6 +6,8 @@
 
 ### Create a page that can be used to read different Posts.
 
+#### The task is esimated to take 2-4 hours.
+
 - Using a Mock GraphQL endpoint, I should be able to see all of the available posts, and then select a specific post I want to read.
 - Apollo and GraphQL codegen is already installed and setup, so you just need to run the generate function to get the queries you've written.
 - All the colors needed are already defined as CSS Variables in the `styles` directory.
