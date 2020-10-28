@@ -21,8 +21,8 @@ The task can be completed without adding any extra modules, but feel free to add
 ## References
 
 - [Mock GraphQL endpoint](https://graphqlzero.almansi.me/api)
-- [Design](https://srv-store1.gofile.io/download/Q6gC9p/post.jpg)
-- [Video of behavior](https://srv-store4.gofile.io/download/PfMiD5/FE_Test_video.mp4)
+- [Design](https://gofile.io/d/Q6gC9p)
+- [Video of behavior](https://gofile.io/d/PfMiD5)
 - [GraphQL Codegen](https://github.com/dotansimha/graphql-code-generator)
 
 ## You're being measured by the following:
