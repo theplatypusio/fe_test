@@ -17,6 +17,7 @@ The task can be completed without adding any extra modules, but feel free to add
 - Design
 - Caching
 - Loader
+- Typescript Typing
 
 ## References
 
@@ -30,11 +31,8 @@ The task can be completed without adding any extra modules, but feel free to add
 - Readability of code
 - Cleanness of code
 - Structuring of project
-- Typings
+- Typescript Typings
 - Styling
 - Animations
 - Naming
 - Technology choices
-
-
-
