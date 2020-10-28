@@ -6,6 +6,8 @@ Using a Mock GraphQL endpoint, I should be able to see all of the available post
 
 Apollo and GraphQL codegen is already installed and setup, so you just need to run the generate function to get the queries you've written.
 
+All the colors needed are already defined as CSS Variables in the `styles` directory.
+
 The design is only a reference and feel free to improve it if you want.
 
 The task can be completed without adding any extra modules, but feel free to add any if as you see necessary.
@@ -16,7 +18,7 @@ The task can be completed without adding any extra modules, but feel free to add
 - Caching
 - Loader
 
-## Reference
+## References
 
 - [Mock GraphQL endpoint](https://graphqlzero.almansi.me/api)
 - [Design](https://srv-store1.gofile.io/download/Q6gC9p/post.jpg)
@@ -27,6 +29,7 @@ The task can be completed without adding any extra modules, but feel free to add
 - Logic Reusability (scalability)
 - Readability of code
 - Cleanness of code
+- Structuring of project
 - Typings
 - Styling
 - Animations
