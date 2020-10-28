@@ -1,16 +1,16 @@
 # Frontend Test
 
-Create a page that can be used to read different Posts.
+##### *If you got here by accident, but want to apply for a frontend position anyway, feel free to fork the project and send [@mthines](https://github.com/mthines) the results.*
 
-Using a Mock GraphQL endpoint, I should be able to see all of the available posts, and then select a specific post I want to read.
+## 🎯 The test
 
-Apollo and GraphQL codegen is already installed and setup, so you just need to run the generate function to get the queries you've written.
+### Create a page that can be used to read different Posts.
 
-All the colors needed are already defined as CSS Variables in the `styles` directory.
-
-The design is only a reference and feel free to improve it if you want.
-
-The task can be completed without adding any extra modules, but feel free to add any if as you see necessary.
+- Using a Mock GraphQL endpoint, I should be able to see all of the available posts, and then select a specific post I want to read.
+- Apollo and GraphQL codegen is already installed and setup, so you just need to run the generate function to get the queries you've written.
+- All the colors needed are already defined as CSS Variables in the `styles` directory.
+- The design is only a reference and feel free to improve it if you want.
+- The task can be completed without adding any extra modules, but feel free to add any if as you see necessary.
 
 #### Things to consider.
 - Routing
