@@ -8,6 +8,7 @@
 
 #### The task is esimated to take 2-4 hours.
 
+- Clone this repository to your local machine.
 - Using a Mock GraphQL endpoint, I should be able to see all of the available posts, and then select a specific post I want to read.
 - Apollo and GraphQL codegen is already installed and setup, so you just need to run the generate function to get the queries you've written.
 - All the colors needed are already defined as CSS Variables in the `styles` directory.
@@ -27,6 +28,9 @@
 - [Design](https://gofile.io/d/Q6gC9p)
 - [Video of behavior](https://gofile.io/d/PfMiD5)
 - [GraphQL Codegen](https://github.com/dotansimha/graphql-code-generator)
+
+## Turn in
+##### Zip the cloned folder and email it to mads@platypus.io with the subject: *Frontend test*
 
 ## You're being measured by the following:
 - Logic Reusability (scalability)
