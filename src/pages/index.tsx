@@ -1,13 +1,13 @@
 import { NextPage } from 'next';
 import React from 'react';
 import Page from 'components/layout/page';
+import Header from './header';
 import Postlist from './postlist';
+import Postdetail from './postdetail';
 import styles from './index.scss';
 import '../styles/main.scss';
 import { GET_POST } from '../gql/queries';
 import { useQuery } from '@apollo/react-hooks';
-import Header from './header';
-import Postdetail from './postdetail';
 
 type Props = {};
 

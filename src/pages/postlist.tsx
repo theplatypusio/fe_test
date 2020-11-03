@@ -7,9 +7,9 @@ interface PostProps {
   postsData: PostsData;
 }
 
-const postlist: React.FC<PostProps> = (props) => {
+const Postlist: React.FC<PostProps> = (props) => {
   return (
-    <>
+    <div>
       {props.postsData.data.map((post: Posts) => (
         <div
           key={post.id}
@@ -25,8 +25,8 @@ const postlist: React.FC<PostProps> = (props) => {
           <li className={styles.gradientlist}>{post.title}</li>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
-export default postlist;
+export default Postlist;

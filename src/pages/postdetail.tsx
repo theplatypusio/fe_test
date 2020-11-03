@@ -14,20 +14,22 @@ const Postdetails = () => {
   });
   if (error) return <div className={styles.aligncenter}>Oops! Something went wrong.</div>;
   return (
-    <>
+    <div>
       {loading && id > 0 ? (
         <span>Loading...</span>
       ) : data && data.post.title ? (
         <div>
           <h2>{data.post.title}</h2>
           <span>{data.post.body}</span>
-          <span className={styles.uileft}>{data.post.user.name}</span>
-          <span className={styles.uiright}>{data.post.user.email}</span>
+          <div className={styles.uileft}>
+            <b>{data.post.user.name}</b>
+          </div>
+          <div className={styles.uiright}>{data.post.user.email}</div>
         </div>
       ) : (
         <div className={styles.aligncenter}>Which post do you wanna read?</div>
       )}
-    </>
+    </div>
   );
 };
 

@@ -26,6 +26,7 @@ $lr-padding: 15px;
   display:block;
   background-color: #343f4f;
   width:100%;
+  min-width: 420px;
   height:10vh;
   @extend %boxpadding;
   font-weight: bold;
@@ -41,7 +42,7 @@ $lr-padding: 15px;
 
 .leftcol{
   width:25%;
-  min-width: 380px;
+  min-width: 200px;
   padding: 5px 15px 15px 15px;
   background-color:#f2f4f6;
   overflow-y: scroll;
@@ -50,6 +51,7 @@ $lr-padding: 15px;
 .rightcol {
     position: relative;
     width:75%;
+    min-width:220px;
     @extend %boxpadding;
 }
 .aligncenter{
@@ -99,4 +101,14 @@ li.gradientlist::first-letter{
 .gradientlist:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+@media only screen and (max-width: 468px) {
+  .uileft{
+    margin-bottom:20px;
+  }
+  .uiright{
+    left:$lr-padding;
+  }
+  
 }
