@@ -1,0 +1,118 @@
+$lr-padding: 15px;
+
+/* padding */
+%boxpadding {
+  padding: $lr-padding;
+}
+/* box-shadow */
+%boxshadow {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+}
+/* Text capital*/
+%textcap {
+  text-transform: capitalize;
+}
+
+.main {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  width:100%;
+  height:100vh;
+}
+
+.header {
+  display:block;
+  background-color: #343f4f;
+  width:100%;
+  min-width: 420px;
+  height:10vh;
+  @extend %boxpadding;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+}
+.container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height:90vh;
+}
+
+.leftcol{
+  width:25%;
+  min-width: 200px;
+  padding: 5px 15px 15px 15px;
+  background-color:#f2f4f6;
+  overflow-y: scroll;
+
+}
+.rightcol {
+    position: relative;
+    width:75%;
+    min-width:220px;
+    @extend %boxpadding;
+}
+
+/* make text align to center*/
+.aligncenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color:rgba(0, 0, 0, 0.25);
+}
+
+div>h2::first-letter{
+  @extend %textcap;
+}
+
+.uileft{
+  position: absolute;
+  left:$lr-padding;
+  bottom:$lr-padding;
+}
+.uiright{
+  position: absolute;
+  right:$lr-padding;
+  bottom:$lr-padding;
+}
+
+// row design for each post's under list
+li.gradientlist {
+    list-style: none;
+    margin: 0.75rem 0;
+    padding-left: 0rem;
+    background: #343f4f14;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    padding: 0.8rem;
+    position: relative;
+    cursor: pointer;
+    @extend %boxshadow;
+    
+}
+li.gradientlist::first-letter{
+  @extend %textcap;
+}
+.gradientlist:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.gradientlist:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+// footer layout for small device
+@media only screen and (max-width: 468px) {
+  .uileft{
+    margin-bottom:20px;
+  }
+  .uiright{
+    left:$lr-padding;
+  }
+  
+}
