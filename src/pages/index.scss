@@ -54,6 +54,8 @@ $lr-padding: 15px;
     min-width:220px;
     @extend %boxpadding;
 }
+
+/* make text align to center*/
 .aligncenter{
   position: absolute;
   top: 50%;
@@ -79,6 +81,8 @@ div>h2::first-letter{
   right:$lr-padding;
   bottom:$lr-padding;
 }
+
+// row design for each post's under list
 li.gradientlist {
     list-style: none;
     margin: 0.75rem 0;
@@ -102,7 +106,7 @@ li.gradientlist::first-letter{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
-
+// footer layout for small device
 @media only screen and (max-width: 468px) {
   .uileft{
     margin-bottom:20px;

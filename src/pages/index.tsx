@@ -12,7 +12,7 @@ import { useQuery } from '@apollo/react-hooks';
 type Props = {};
 
 const Index: NextPage<Props> = () => {
-  //get all posts from api on pageload
+  //get all posts from https://graphqlzero.almansi.me/api on pageload
   const { loading, error, data } = useQuery(GET_POST);
   if (error) return <div className={styles.aligncenter}>Oops! Somthing went wrong.</div>;
   if (loading) return <div className={styles.aligncenter}>Loading...</div>;
@@ -22,9 +22,11 @@ const Index: NextPage<Props> = () => {
         <Header />
         <div className={styles.container}>
           <div className={styles.leftcol}>
+            {/* send all posts data as props to child component */}
             <Postlist postsData={data.posts} />
           </div>
           <div className={styles.rightcol}>
+            {/*child component for displaying details of selected post */}
             <Postdetail />
           </div>
         </div>
